@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Home.module.scss";
+import styles from "../../styles/card.module.scss";
 
 const Card = ({ data }) => {
   console.log(data);
@@ -8,19 +8,23 @@ const Card = ({ data }) => {
       {data &&
         data.map((item) => {
           return (
-            <div className="col">
+            <div className="col ">
               <div
-                className="card"
-                //   style={{ width: "18rem;" }}
+                className="card d-flex align-items-center m-3"
+                id={styles.card}
               >
                 <img
                   src={item.image}
-                  className="productImage"
                   alt="Loading..."
+                  className={styles.productImage}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text">{item.description}</p>
+                  <h6 className="card-title" id={styles.cardTitle}>
+                    {item.title}
+                  </h6>
+                  <p className="card-text" id={styles.cardText}>
+                    {item.description}
+                  </p>
                   <a href="#" className="btn btn-primary">
                     Go somewhere
                   </a>

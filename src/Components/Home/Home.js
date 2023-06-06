@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container min-vh-100 min-vw-100 mt-3">
+    <div className="container mt-3">
       <Card data={data && data} />
     </div>
   );

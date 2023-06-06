@@ -1,0 +1,27 @@
+.productImage {
+  width: 230px;
+  height: 260px;
+}
+
+#cardText {
+  height: 78px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#cardTitle {
+  height: 55px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: center;
+}
+
+#card:hover {
+  border: 1px solid blue;
+  box-shadow: 2px 4px 8px 12px lightblue;
+  cursor: pointer;
+}
